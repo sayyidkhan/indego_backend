@@ -15,7 +15,7 @@ initDB();
 //app init codes
 const PORT = process.env.PORT || 5000;
 app.use(restrictOrigin); // for security
-app.use(express.json());
+app.use(express.json()); // this will parse every single json that is coming in
 app.use(morgan("dev")); // for API reporting
 
 //endpoints
