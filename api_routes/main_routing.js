@@ -24,7 +24,6 @@ const bookRouting = (app) => {
             else {
                 //if there is no error
                 res.send("book id: " + id + " saved successfully.");
-                //save data into database
             }
         });
 
