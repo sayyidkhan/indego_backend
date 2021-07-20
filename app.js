@@ -21,10 +21,6 @@ app.use(morgan("dev")); // for API reporting
 //endpoints
 main_routing(app);
 
-app.get("/", function (req,res) {
-   res.sendFile(__dirname + '/static/index.html');
-});
-
 app.listen(PORT, () => {
     console.log("Server started listening on port : ", PORT);
 });
